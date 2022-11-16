@@ -4,7 +4,7 @@ import { AdviceComponent } from './advice.component';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing'; 
 
-fdescribe('AdviceComponent', () => {
+describe('AdviceComponent', () => {
   let component: AdviceComponent;
   let fixture: ComponentFixture<AdviceComponent>;
   // let router: {navigate: jasmine.createSpy('navigate')};
@@ -28,11 +28,8 @@ fdescribe('AdviceComponent', () => {
     TestBed.configureTestingModule({
       imports: [ RouterTestingModule ], 
       providers: [ { provide: Router, useValue: Router } ]
+  });  
   });
-
-  
-  });
-
   
   it('should create', () => {
     expect(component).toBeTruthy();
